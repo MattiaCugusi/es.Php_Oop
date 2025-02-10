@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Automobile</title>
-</head>
-<body>
-    <h1>Automobile</h1>
 
-    <?php
+ <?php
+    require_once "./Veicolo.php";
+
         class Automobile extends Veicolo{
             private $modello;
 
@@ -26,10 +19,19 @@
             $this->modello = $modello;
         }
 
+        
 
+        public function toString(){
+            parent::toString();
+            echo "<p>Modello: " . $modello . "</p>";
+        }
 
 
         }
+
+        
+
+
     ?>
 </body>
 </html>

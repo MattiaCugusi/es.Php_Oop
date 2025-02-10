@@ -5,7 +5,7 @@
         private $anno;
 
 
-        public function __construct($marca, $cognome, $eta){
+        public function __construct($marca, $anno){
             $this->marca = $marca;
             $this->anno = $anno;
         }
@@ -25,6 +25,13 @@
         public function setAnno(){
             $this->anno = $anno;
         }
+
+        public function toString(){
+            echo "<p>Marca: " . $this->marca . "</p>";
+            echo "<p>Anno: " . $this->anno . "</p>";
+
+        }
+
 
 
 
